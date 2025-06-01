@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#181818"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:text="Bienvenido" />
+
+    <TextView
+        android:id="@+id/mensajeEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#034F71"
+        android:visibility="gone"
+        android:layout_margin="12dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEventos"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Eventos"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="#0574A7"
+        app:cornerRadius="4dp"
+          />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHistorial"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Historial de Eventos"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#0574A7"
+        app:cornerRadius="4dp"
+        android:layout_margin="5dp" />
+
+
+    <!-- Solo admin -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCrearEvento"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Crear Evento"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#0574A7"
+        app:cornerRadius="4dp"
+        android:layout_margin="5dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEstadisticas"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#0574A7"
+        app:cornerRadius="4dp"
+        android:layout_margin="5dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A10911"
+        app:cornerRadius="4dp"
+        android:layout_margin="5dp" />
+
+
+
+</LinearLayout>

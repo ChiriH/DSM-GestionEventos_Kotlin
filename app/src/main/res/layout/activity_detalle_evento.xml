@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#181818"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#282828"
+        android:padding="60dp"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:layout_marginVertical="16dp"         >
+
+        <TextView
+            android:id="@+id/nombreEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Evento"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/fechaEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textColor="#CCCCCC"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/ubicacionEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicación"
+            android:textColor="#CCCCCC"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:id="@+id/horaEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textColor="#CCCCCC"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/descripcionEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textColor="#CCCCCC"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Botones solo visibles para Admin -->
+        <LinearLayout
+            android:id="@+id/layoutAdminButtons"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtCerrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evento finalizado, no se puede editar"
+                android:textColor="#D2050F"
+                android:layout_marginBottom="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditarEvento"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#0574A7"
+                app:cornerRadius="4dp"
+                android:layout_margin="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCerrarEvento"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cerrar"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#A10911"
+                app:cornerRadius="4dp"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+        <!-- Botón para confirmar asistencia -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar asistencia"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#0A8825"
+            app:cornerRadius="4dp"
+            android:layout_margin="10dp" />
+
+        <!-- Botón para cancelar asistencia -->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar asistencia"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#D2050F"
+            app:cornerRadius="4dp"
+            android:layout_margin="10dp" />
+        <!-- Campo de reseña -->
+        <LinearLayout
+            android:id="@+id/layoutFeedback"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editTextResena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Deja tu reseña (1-5)"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#888888"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txtResenaExistente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ya has evaluado este evento"
+                android:textColor="#00811C"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+            <Button
+                android:id="@+id/btnEnviarResena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Reseña" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

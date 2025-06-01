@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#181818"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="Editar evento"
+        android:textSize="22sp"
+
+        android:textColor="#FFF" />
+    <EditText
+        android:id="@+id/editNombre"
+        android:textColor="#ffff"
+        android:hint="Nombre del evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editFecha"
+        android:textColor="#ffff"
+        android:hint="Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editHora"
+        android:textColor="#ffff"
+        android:hint="Hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editUbicacion"
+        android:textColor="#ffff"
+        android:hint="Ubicación"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar cambios"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#0A8825"
+        app:cornerRadius="4dp"
+        android:layout_margin="20dp" />
+</LinearLayout>

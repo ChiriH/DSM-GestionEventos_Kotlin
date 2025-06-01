@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#181818"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="Evento nuevo"
+        android:textSize="22sp"
+
+        android:textColor="#FFF" />
+    <EditText
+        android:id="@+id/nombreEvento"
+        android:layout_width="350dp"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="Título del evento"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/descripcionEvento"
+        android:layout_width="350dp"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="Descripción"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/fechaEvento"
+        android:layout_width="350dp"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="Fecha (dd/mm/yyyy)"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/horaEvento"
+        android:layout_width="350dp"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="Hora (HH:mm)"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/ubicacionEvento"
+        android:layout_width="350dp"
+        android:textColor="#ffff"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="Ubicación"
+        android:textColorHint="#757575" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCrearEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Evento"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#03A9F4"
+        app:cornerRadius="4dp"
+        android:layout_margin="20dp" />
+
+
+
+
+</LinearLayout>

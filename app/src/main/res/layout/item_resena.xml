@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="#282828"
+    android:elevation="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:clipToPadding="false"
+
+    android:backgroundTint="#034F71">
+
+    <TextView
+        android:id="@+id/nombreEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Evento"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/puntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuación: 5"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="2dp" />
+
+
+</LinearLayout>

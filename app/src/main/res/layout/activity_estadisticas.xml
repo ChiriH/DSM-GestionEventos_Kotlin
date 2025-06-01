@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#181818"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="60dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="Estadísticas y comentarios"
+            android:textSize="22sp"
+
+            android:textColor="#FFF" />
+        <!-- Estadísticas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="#282828"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#282828">
+
+            <TextView
+                android:id="@+id/totalEventos"
+                android:text="Eventos evaluados: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"  android:layout_height="match_parent" android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/totalConfirmados"
+                android:text="Usuarios confirmados: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"  android:layout_height="match_parent" android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/promedioEncuestas"
+                android:text="Promedio encuestas: "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"  android:layout_height="match_parent" android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <!-- Lista de reseñas -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEstadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp" />
+    </LinearLayout>
+</ScrollView>
