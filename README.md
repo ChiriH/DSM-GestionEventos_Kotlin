@@ -14,7 +14,7 @@ Bajo los siguientes términos:
 
 ## Enlaces:
 
-- 📝 Distribución y planteamineto de actividades -  
+- 📝 Distribución y planteamineto de actividades - [Trello](https://trello.com/b/jaDpn3iW)
 - 🌱 Mockups del proyecto - [Figma](https://www.figma.com/proto/3nvzvh2bIOwv4XfrtlHV74/Prototipos---Proyecto-DSM?node-id=0-1&t=0w9ZUrbDcaJnTmLR-1)
 
 
